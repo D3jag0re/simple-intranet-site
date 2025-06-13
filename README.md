@@ -6,7 +6,7 @@ This has been anonymized but can be easily modified for use.
 
 ## Structure 
 
-This site is simple a nested list of Links. The structure is as follows. Modify to your needs..
+This site is simple a nested list of Links. The structure is as follows. Modify to your needs...
 
 ```bash
 .
