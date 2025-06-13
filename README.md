@@ -2,7 +2,7 @@
 
 This was created to replace an old intranet site at a workplace. Simple a nested list of links. It was outdated to the point where in order for it to work it had to be ran in IE mode in Edge which was causing problems. Due to many of the links requiring local resources, we could not fully host in Sharepoint yet. 
 
-This has been anonymized but can be easily modified for use. 
+This has been anonymized but can be easily modified for use.
 
 ## Structure 
 
@@ -124,3 +124,7 @@ This site is simple a nested list of Links. The structure is as follows. Modify 
 ├── Sharepoint 365/
 ├── Sharepoint 365/
 ```
+
+## Testing 
+
+Why not overthink this and test with an nginx container? 
