@@ -1,0 +1,63 @@
+.folder-structure {
+    font-family: Arial, sans-serif;
+    width: 250px;
+}
+
+.folder-structure ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.folder-structure li {
+    position: relative;
+    padding: 8px 0;
+}
+
+.folder-structure a {
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+}
+
+.folder-structure a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.folder-structure ul ul {
+    display: none; /* Initially hide submenus */
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 1000;
+}
+
+.folder-structure li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+
+.folder-structure li > a {
+    font-weight: bold;
+}
+
+/* Add a dot after links that have nested links (sub-menus) */
+.folder-structure li:has(ul) > a::after {
+    content: "•";  /* The dot character */
+    font-size: 20px; /* Adjust size */
+    color: #3498db; /* Customize color */
+    margin-left: 8px; /* Space between the link and dot */
+}
+
+/* Optional: Customize the appearance of the dot or use an icon (arrow) */
+.folder-structure li:has(ul) > a::after {
+    content: " ▶";  /* You can change this to any symbol or icon */
+    font-size: 16px;
+    color: #3498db;
+    margin-left: 5px;
+}

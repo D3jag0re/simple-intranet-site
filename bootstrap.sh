@@ -11,6 +11,7 @@ sudo systemctl enable nginx
 # Install Hugo 
 # (wrong version) sudo apt install -y hugo
 
+
 # Create a directory for the Hugo site
 hugo new site /var/www/intranet
 

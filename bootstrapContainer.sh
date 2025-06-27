@@ -2,12 +2,13 @@
 # This is for use with a ubuntu container with manual injection of the script
 
 # Install Dependencies 
-apt install -y wget 
+apt update
+apt install wget -y
 apt install vim -y
+apt install git -y
 
 # Install Nginx
-apt update
-apt install -y nginx
+apt install nginx -y
 
 # Start and enable Nginx service
 service nginx start
@@ -46,3 +47,28 @@ mkdir -p content/Support/Software
 ##
 ##############################
 
+
+vim /etc/nginx/sites-available/default 
+
+server {
+    listen 80;
+    server_name localhost;
+
+    root /var/www/intranet/public;  # Make sure this is correct
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+# Create symbolic link to enable the site
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+
+# Setup site 
+cd /var/www/intranet
+hugo 
+
+#####################
+# At this point you will have default hugo site with the ananke theme installed.
+# Now need to add content to the site..

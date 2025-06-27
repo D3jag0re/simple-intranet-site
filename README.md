@@ -4,6 +4,17 @@ This was created to replace an old intranet site at a workplace. Simple a nested
 
 This has been anonymized but can be easily modified for use.
 
+Requirements: 
+
+- Keep the same nested list format as we have currently 
+- Make nested links appear when cursor is hovering over said link
+
+Uses: 
+
+- nginx
+- Hugo 
+- ananke template 
+
 ## Structure 
 
 This site is simple a nested list of Links. The structure is as follows. Modify to your needs.
@@ -128,3 +139,8 @@ This site is simple a nested list of Links. The structure is as follows. Modify 
 ## Testing 
 
 Why not overthink this and test with an nginx container? 
+
+To run in container: 
+
+```docker build -t hugo-intranet .```
+```docker run -d -p 8080:80 hugo-intranet```
