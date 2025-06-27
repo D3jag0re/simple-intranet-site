@@ -138,9 +138,15 @@ This site is simple a nested list of Links. The structure is as follows. Modify 
 
 ## Testing 
 
-Why not overthink this and test with an nginx container? 
+Why not overthink this and test with an nginx container? And make it a multi-stage ?
 
 To run in container: 
 
 ```docker build -t hugo-intranet .```
 ```docker run -d -p 8080:80 hugo-intranet```
+
+### Why Multi-Stage? 
+
+The idea of the multistage is for the first stage/ image to do all the building, then copy only the result to serve it in a clean, minimal nginx image. 
+
+For this it is completely overkill (so is containerizing in the first place) but it is good practice / learning opportunity. 
