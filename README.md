@@ -145,6 +145,8 @@ To run in container:
 ```docker build -t hugo-intranet .```
 ```docker run -d -p 8080:80 hugo-intranet```
 
+access via localhost:8080/
+
 ### Why Multi-Stage? 
 
 The idea of the multistage is for the first stage/ image to do all the building, then copy only the result to serve it in a clean, minimal nginx image. 

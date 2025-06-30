@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Intranet</title>
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome To The Simple Intranet Site</h1>
+    </header>
+
+    <!-- Left Sidebar with Folder Structure -->
+    <div class="folder-structure">
+        <ul>
+            <li><a href="link_to_phone_list">Phone List</a></li>
+            <li><a href="Location">Location</a>
+                <ul>
+                    <li><a href="Location/Top">Top</a>
+                        <ul>
+                            <li><a href="https://www.google.com">Efficiency Programs</a></li>
+                            <li><a href="path_to_things">Requested Change List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.bing.com">Things To Click</a></li>
+                        <ul>
+                            <li><a href="file://brkfs01/shared/support/webfiles/cafeteria/Catering Menu.htm">Catering Menu</a></li>
+                            <li><a href="file://brkfs01/shared/support/webfiles/cafeteria/Departmental Catering Form 2.doc">Departmental Catering Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://anotherfile.fileme.com">Another File</a></li>
+            <li><a href="Subject">Subject</a>
+                <ul>
+                    <li><a href="MoreThings">MoreThings</a></li>
+                    <li><a href="MoreThings2">Morethings2</a></li>
+                </ul>
+            </li>
+            <li><a href="Link_to_so_many_things">So Many Things</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        {{ block "main" . }}{{ .Content }}{{ end }}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Simple Intranet</p>
+    </footer>
+
+</body>
+</html>
