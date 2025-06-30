@@ -23,117 +23,16 @@ This site is simple a nested list of Links. The structure is as follows. Modify 
 .
 ├── Phone List
 ├── Location/
-│   ├── images/
-│       ├── images/
-│       └── scripts/
-│   ├── styles/
-│   ├── images/
-│       ├── images/
-│       └── scripts/
-│   ├── styles/
-│   ├── images/
-│   ├── styles/
-│   ├── images/
-│   ├── styles/
-│   ├── images/
-│   ├── styles/
-│   └── scripts/
-├── Company HR/
-│   ├── components/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   └── App.js
-├── public/
-│   ├── index.html
-│   ├── index.html
-│   ├── index.html
-│   └── favicon.ico
-├── public/
-│   ├── index.html
-│   ├── index.html
-│   ├── index.html
-│   └── favicon.ico
-├── Phone List
-├── Phone List
-├── tests/
-│   ├── unit/
-│   └── integration/
-├── Support/
-│   ├── images/
-│       ├── images/
-│       ├── images/
-│       └── scripts/
-│   ├── styles/
-│   ├── styles/
-│   ├── styles/
-│   ├── images/
-│       ├── images/
-│       └── scripts/
-├── Sharepoint 365/
-│   ├── components/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   └── App.js
-├── Sharepoint/
-│   ├── styles/
-│   ├── styles/
-│   ├── styles/
-│   ├── images/
-│   ├── styles/
-│   ├── styles/
-│   ├── styles/
-│   ├── images/
-│       ├── images/
-│       ├── images/
-│       ├── images/
-│       ├── images/
-│       └── scripts/
-│   ├── images/
-│       ├── images/
-│   ├── images/
-│   ├── images/
-│       ├── images/
-│   ├── styles/
-│   ├── styles/
-│   ├── images/
-│       ├── images/
-│   ├── images/
-│       ├── images/
-│   ├── images/
-│   ├── styles/
-│   ├── styles/
-│   ├── styles/
-├── Sharepoint 365/
-├── Sharepoint 365/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   └── App.js
-├── Sharepoint 365/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-│   ├── utils/
-│   └── App.js
-├── Sharepoint 365/
-├── Sharepoint 365/
-├── Sharepoint 365/
-│   ├── components/
-│   ├── utils/
-│   ├── components/
-├── Sharepoint 365/
-├── Sharepoint 365/
+│   ├── Top/
+│       ├── Efficiency Programs/
+│       └── Requested Change List/
+│   └── ThingstoClick/
+├── Another File
+├── Subject/
+│   ├── MoreThings
+│   └── MoreThings2
+├── So Many Things
+
 ```
 
 ## Testing 
@@ -145,7 +44,7 @@ To run in container:
 ```docker build -t hugo-intranet .```
 ```docker run -d -p 8080:80 hugo-intranet```
 
-access via localhost:8080/
+access via http://localhost:8080/
 
 ### Why Multi-Stage? 
 
