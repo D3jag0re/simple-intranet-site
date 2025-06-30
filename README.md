@@ -4,12 +4,12 @@ This was created to replace an old intranet site at a workplace. Simple a nested
 
 This has been anonymized but can be easily modified for use.
 
-Requirements: 
+#### Requirements: 
 
 - Keep the same nested list format as we have currently 
 - Make nested links appear when cursor is hovering over said link
 
-Uses: 
+#### Uses: 
 
 - nginx
 - Hugo 
