@@ -42,6 +42,7 @@ Why not overthink this and test with an nginx container? And make it a multi-sta
 To run in container: 
 
 ```docker build -t hugo-intranet .```
+
 ```docker run -d -p 8080:80 hugo-intranet```
 
 access via http://localhost:8080/
