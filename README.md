@@ -39,7 +39,12 @@ This site is simple a nested list of Links. The structure is as follows. Modify 
 
 Why not overthink this and test with an nginx container? And make it a multi-stage ?
 
-To run in container: 
+#### Requirements
+
+- Docker 
+- WSL (if running on Windows)
+
+#### To run in container: 
 
 ```docker build -t hugo-intranet .```
 
