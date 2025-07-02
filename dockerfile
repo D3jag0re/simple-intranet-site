@@ -1,6 +1,11 @@
 # This Dockerfile builds a Hugo site and serves it with Nginx.
 # syntax=docker/dockerfile:1
 
+###################
+##### Stage 1 #####
+###################
+# The first stage installs Hugo, creates a new site, and builds it.
+
 # Stage 1: build the Hugo site
 FROM ubuntu:22.04 AS hugo-builder
 
@@ -45,6 +50,10 @@ COPY styles.css /var/www/intranet/static/css/styles.css
 RUN cd /var/www/intranet && hugo
 
 
+###################
+##### Stage 2 #####
+###################
+# This stage uses the built Hugo site and serves it with Nginx
 
 # Stage 2: nginx serving the hugo site
 FROM nginx:stable
