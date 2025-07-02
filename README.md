@@ -57,3 +57,10 @@ access via http://localhost:8080/
 The idea of the multistage is for the first stage/ image to do all the building, then copy only the result to serve it in a clean, minimal nginx image. 
 
 For this it is completely overkill (so is containerizing in the first place) but it is good practice / learning opportunity. 
+
+## To Modify 
+
+To modify the structure / links, two files will need to be modified: 
+
+```baseof.html```
+```folders.sh```
